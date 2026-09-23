@@ -8,12 +8,19 @@ if (isLoggedIn === true){
     ) 
 } */
 
-let age = 35;
+
+/* let age = 35;
 let citizen = true;
 
 if (age >= 35 && citizen === true){
     console.log("run for president")
 }
+ */
+
+
+
+
+
 
 
 
