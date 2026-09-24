@@ -13,15 +13,30 @@
 //   "positive odd"    if num is positive and odd
 //   "negative even"   if num is negative and even
 //   "negative odd"    if num is negative and odd
-function classifyNumber(num) {
+/* function classifyNumber(num) {
   // TODO: your code here
+    if (num === 0)
+        console.log(num, "zero");
+    else if (num % 2 === 0 && num>0){
+        console.log(num, "positive even");
+    }
+    else if (num % 2 === 1 && num>0){
+        console.log(num, "positive odd");
+    }
+    else if (num % 2 === 0 && num<0){
+        console.log(num, "negative even");
+    }
+    else {
+        console.log(num, "negative odd");
+    }
 }
+
 
 console.log(classifyNumber(0)); // "zero"
 console.log(classifyNumber(4)); // "positive even"
 console.log(classifyNumber(7)); // "positive odd"
 console.log(classifyNumber(-4)); // "negative even"
-console.log(classifyNumber(-7)); // "negative odd"
+console.log(classifyNumber(-7)); // "negative odd" */
 
 // ---------- Problem 2: Grade Calculator ----------
 // Return the letter grade for score (0-100):
@@ -31,15 +46,31 @@ console.log(classifyNumber(-7)); // "negative odd"
 //   60-69   -> "D"
 //   below 60 -> "F"
 // If score is less than 0 or greater than 100, return "Invalid score".
-function getLetterGrade(score) {
+/* function getLetterGrade(score) {
   // TODO: your code here
+  if (score > 100 || score<0)
+        console.log("Invalid score")
+    else if (score >= 90){
+        console.log("A");}
+    else if (score >= 80){
+        console.log("B");
+        }
+    else if (score >= 70){
+        console.log("C");
+        }
+    else if (score >= 60){
+        console.log("D");
+        }
+    else {
+        console.log("F");
+        }
 }
 
 console.log(getLetterGrade(95)); // "A"
 console.log(getLetterGrade(82)); // "B"
 console.log(getLetterGrade(59)); // "F"
 console.log(getLetterGrade(-5)); // "Invalid score"
-console.log(getLetterGrade(150)); // "Invalid score"
+console.log(getLetterGrade(150)); // "Invalid score" */
 
 // ---------- Problem 3: FizzBuzz ----------
 // Return:
@@ -49,6 +80,17 @@ console.log(getLetterGrade(150)); // "Invalid score"
 //   otherwise, num converted to a string
 function fizzBuzz(num) {
   // TODO: your code here
+      if (num % 3 === 0 && num % 5 === 0){
+    console.log("FizzBuzz")
+    }
+    else if (num % 3 === 0){
+    console.log("Fizz")
+    }    
+    else if (num % 5 === 0){
+    console.log("Buzz")
+    }
+    else 
+        console.log(num)
 }
 
 console.log(fizzBuzz(3)); // "Fizz"
